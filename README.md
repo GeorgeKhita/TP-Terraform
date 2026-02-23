@@ -79,14 +79,14 @@ terraform destroy
 ### terraform plan
 
 <img width="1306" height="691" alt="terraform_plan" src="https://github.com/user-attachments/assets/d54b1c5c-4a4d-4eeb-bbcf-52a65785f417" />
-
+...
 <img width="1281" height="589" alt="terraform_plan2" src="https://github.com/user-attachments/assets/074f027d-83dc-4fc2-bc71-19bedebdd9c3" />
 
 
 ### terraform apply
 
-<img width="1280" height="695" alt="terraform_apply1" src="https://github.com/user-attachments/assets/f2ba2922-0e5d-4688-b69c-77b6d8827525" 
-  />
+<img width="1280" height="695" alt="terraform_apply1" src="https://github.com/user-attachments/assets/f2ba2922-0e5d-4688-b69c-77b6d8827525" />
+...
 <img width="1252" height="305" alt="terraform_apply2" src="https://github.com/user-attachments/assets/cf7ff9c4-e7c0-416f-8379-40e62110dbe7" />
 
 
@@ -99,7 +99,7 @@ terraform destroy
 ### terraform destroy
 
 <img width="1519" height="483" alt="terraform_destroy1" src="https://github.com/user-attachments/assets/461ee145-6f77-4925-a54d-3d923c7d9280" />
-
+...
 <img width="1521" height="408" alt="terraform_destroy2" src="https://github.com/user-attachments/assets/1c5e49ad-b3ae-43ad-a8cd-14eaecdfe83e" />
 
 ---
