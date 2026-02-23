@@ -17,11 +17,3 @@ output "lb_public_ip" {
   description = "IP publique du Load Balancer"
   value       = azurerm_public_ip.lb_pip.ip_address
 }
-
-output "vm1_public_ip" {
-  value = azurerm_public_ip.vm1_pip.ip_address
-}
-
-output "vm2_public_ip" {
-  value = azurerm_public_ip.vm2_pip.ip_address
-}

@@ -131,9 +131,7 @@ resource "azurerm_network_interface" "nic1" {
   ip_configuration {
     name                          = "internal"
     subnet_id                     = azurerm_subnet.subnet.id
-    private_ip_address_allocation = "Dynamic"
-    public_ip_address_id          = azurerm_public_ip.vm1_pip.id
-  }
+    private_ip_address_allocation = "Dynamic"  }
 }
 
 # NIC VM-2
@@ -145,9 +143,7 @@ resource "azurerm_network_interface" "nic2" {
   ip_configuration {
     name                          = "internal"
     subnet_id                     = azurerm_subnet.subnet.id
-    private_ip_address_allocation = "Dynamic"
-    public_ip_address_id          = azurerm_public_ip.vm2_pip.id
-  }
+    private_ip_address_allocation = "Dynamic"  }
 }
 
 # Association NIC1 au Backend Pool
@@ -240,21 +236,4 @@ resource "azurerm_linux_virtual_machine" "vm2" {
     systemctl enable nginx
   EOF
   )
-}
-# IP publique VM-1 (diagnostic)
-resource "azurerm_public_ip" "vm1_pip" {
-  name                = "${var.prefix}-vm1-pip"
-  location            = var.location
-  resource_group_name = azurerm_resource_group.rg.name
-  allocation_method   = "Static"
-  sku                 = "Standard"
-}
-
-# IP publique VM-2 (diagnostic)
-resource "azurerm_public_ip" "vm2_pip" {
-  name                = "${var.prefix}-vm2-pip"
-  location            = var.location
-  resource_group_name = azurerm_resource_group.rg.name
-  allocation_method   = "Static"
-  sku                 = "Standard"
 }
